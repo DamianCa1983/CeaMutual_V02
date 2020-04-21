@@ -5,7 +5,7 @@
         </a>
 
         <a class="py-2" href="adminDestino.php">Destinos</a>
-        <a class="py-2" href="adminCategorias.php">Paquetes</a>
+        <a class="py-2" href="adminPaquete.php">Paquetes</a>
         <a class="py-2" href="adminUsuarios.php">Usuarios</a>
 
 <?php

@@ -1,7 +1,7 @@
 <?php
 
     #############################
-    ###### CRUD de MARCAS #######
+    ###### CRUD de DESTINO #######
 
     function listarDestino()
     {

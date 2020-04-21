@@ -1,20 +1,19 @@
 <?php
 
-    function listarProductos()
+    function listarPaquetes()
     {
         $link = conectar();
-        $sql = "SELECT idProducto, 
-                        prdNombre, prdPrecio,
-                        p.idMarca, mkNombre,
-                        p.idCategoria, catNombre,
-                        prdPresentacion, prdStock,
-                        prdImagen
-                    FROM productos p, categorias c, marcas m
-                    WHERE p.idMarca = m.idMarca
-                     AND p.idCategoria = c.idCategoria";
-
-        $listadoProductos = mysqli_query($link, $sql);
-        return $listadoProductos;
+        $sql = "SELECT idPaquete, packNombre, packPrecio,
+                        d.idDestino, destNombre, detalle_1,
+                        detalle_2, detalle_3, detalle_4, 
+                        detalle_5, detalle_6, detalle_7,
+                        detalle_8, detalle_9, hotel_1,
+                        hotel_2, hotel_3, hotel_4, hotel_5,
+                        hotel_6, hotel_7, hotel_8, hotel_9                       
+                    FROM paquete p, destino d
+                    WHERE p.idDestino = d.idDestino";
+        $listadoPaquetes = mysqli_query($link, $sql);
+        return $listadoPaquetes;
     }
 
     function subirArchivo()

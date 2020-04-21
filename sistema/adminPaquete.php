@@ -1,27 +1,25 @@
 <?php
-       require 'autenticar.php';
-       require 'funciones/conexion.php';
-        require 'funciones/funcionesCategorias.php';
-        $listacategorias = listarCategorias();
+        require 'autenticar.php';
+        require 'funciones/conexion.php';
+        require 'funciones/funcionesPaquetes.php';
+        $paquete = listarPaquetes();
 		include 'includes/header.html';
 		include 'includes/nav.php';  
 ?>
 
     <main class="container">
-        <h1>Panel de administración de Categorias</h1>
+        <h1>Panel de administración de Paquetes</h1>
 
 
-        <a href="admin.php" class="btn btn-outline-secondary my-3">
-            Volver a panel principal
-        </a>
 
         <table class="table table-border table stripped table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th>id</th>
-                    <th>Categoria</th>
+                    <th>Nombre</th>
+                    <th>Destino</th>
+                    <th>Precio</th>
                     <th colspan="2">
-                        <a href="formAgregarCategoria.php" class="btn btn-secondary">
+                        <a href="formAgregarPaquete.php" class="btn btn-secondary">
                             agregar
                         </a>
                     </th>
@@ -29,18 +27,19 @@
             </thead>
             <tbody>
 <?php 
-            while( $categoria = mysqli_fetch_array($listacategorias) ){
+            while( $pack = mysqli_fetch_array($paquete) ){
 ?>            
                 <tr>
-                    <td><?php echo $categoria[0]; ?></td>
-                    <td><?php echo $categoria[1]; ?></td>
+                    <td>utf<?php echo $pack['packNombre']; ?></td>
+                    <td><?php echo $pack['destNombre']; ?></td>
+                    <td><?php echo $pack['packPrecio']; ?></td>
                     <td>
-                        <a href="formModificarCategoria.php?idCategoria=<?= $categoria['idCategoria']; ?>" class="btn btn-outline-secondary">
+                        <a href="formModificarPaquete.php?idPaquete=<?=$pack['idPaquete']?>" class="btn btn-outline-secondary">
                             modificar
                         </a>
                     </td>
                     <td>
-                        <a href="formEliminarCategoria.php?idCategoria=<?= $categoria['idCategoria']; ?>" class="btn btn-outline-secondary">
+                        <a href="formEliminarProducto.php?idPaquete=<?=$pack['idPaquete']?>" class="btn btn-outline-secondary">
                             eliminar
                         </a>
                     </td>
