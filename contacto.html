@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Cea Mutual | Turismo</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!--Barra de Navegación-->
+  <ul id="dropdown1" class="dropdown-content">
+        <li><a href="turismo.html">Turismo</a></li>
+        <li><a href="capacitacion.html">Capacitación</a></li>
+        <li><a href="cartilla.html">Cartilla Médica</a></li>
+        <li><a href="artHogar.html">Artículos para el Hogar</a></li>
+        <li><a href="optica.html">Óptica</a></li>
+        <li><a href="recDep.html">Recreación y Deportes</a></li>
+    <li class="divider"></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <img   style="padding-left: 100px;"src="images/Logo.jpg" alt="">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Nosotros</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Servicios<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--Barra de Navegación-->
+
+<!--Sliders-->  
+  <div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+        <img src="images/slider/14.jpg" alt="">
+    </div>
+  </div>
+<!--Sliders-->  
+
+<div class="row">
+    <div class="col s6" style="margin-top: 20px;" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2085032370496!2d-58.39390128429916!3d-34.59888876475067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfa0bd08e3%3A0x1a1f8802d87a9b87!2sRodr%C3%ADguez%20Pe%C3%B1a%20846%2C%20C1055%20CABA!5e0!3m2!1ses!2sar!4v1576700947360!5m2!1ses!2sar" width="711" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="col s6">
+      <h5><i class="material-icons">location_on</i> Rodriguez Peña 844 - CABA </h5>
+      <h5><i class="material-icons">call</i> 011 4811-4072</h5>
+      
+        <h5><i class="material-icons">mail_outline</i> Envíanos un mail...</h5>
+        <form action="php/enviaContacto.php">
+        <div class="row">
+          
+            <div class="input-field col s4">
+              <input  name="nombre" type="text" class="validate">
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s4">
+              <input name="apellido" type="text" class="validate">
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4">
+              <input  name="celular" type="text" class="validate">
+              <label for="first_name">Celular</label>
+            </div>
+            <div class="input-field col s4">
+              <input name="email" type="text" class="validate">
+              <label for="last_name">Email</label>
+            </div>
+          </div>
+          <div class="input-field col s8">
+            <textarea name="mensaje" class="materialize-textarea"></textarea>
+            <label for="textarea1">Consulta</label>
+          </div>
+    </div>
+    <button class="btn waves-effect  light-blue darken-4" type="submit" name="action">Enviar
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+</div>
+
+
+
+  <footer class="page-footer light-blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Cea Mutual</h5>
+          <p class="grey-text text-lighten-4">Asociación Mutual de la Confederación de Educadores Argentinos</p>
+        </div>
+        <div class="col l3 s12">
+         <!-- <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>-->
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Menú</h5>
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="about.html">Nosotros</a></li>
+            <li><a class="white-text" href="servicios.html">Servicios</a></li>
+            <li><a class="white-text" href="contacto.html">Contactos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://dyl360.com.ar">DyL360</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>  $(".dropdown-trigger").dropdown();</script>
+  <script>  
+   var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  </script>
+
+
+  </body>
+</html>

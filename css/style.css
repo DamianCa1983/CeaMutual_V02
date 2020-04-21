@@ -1,0 +1,74 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+main{
+  width: 1600px;
+  height: auto;
+  margin-left: 200px;
+
+}
+
+.imgpaquete{
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+
+.detallepaquete{
+  width: 400px;
+  height: 400px;
+  background-color: #01579b;
+  position: relative;
+  left: 150px;
+  top: 0px;
+  padding: 10px;
+}
+
+.preciopaquete{
+  width: 400px;
+  height: 40px;
+  background-color:grey;
+  position: relative;
+  position: relative;
+  left: 150px;
+  top: 0px;
+  padding: 15px;
+
+
+}
+
+.incluyepaquete{
+  width: 700px;
+  height: 400px;
+  background-color: #f5f5ff;
+  position: relative;
+  left: 870px;
+  top: -780px;
+
+}
+
+.detallehoteles{
+  width: 400px;
+  height: 400px;
+  background-color: grey;
+  position: relative;
+  left: 30px;
+  top: 0px;
+  padding: 10px;
+}
+
