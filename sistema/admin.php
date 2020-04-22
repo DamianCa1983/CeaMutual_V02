@@ -5,19 +5,31 @@
 ?>
 
     <main class="container">
-        <h1>Panel de administración</h1>
+    <div class="card-group">
+  <div class="card">
+    <img src="images/img/destino.jpg" class="card-img-top" alt="...">
+    <div class="card-body mx-auto">
+      <h5 class="card-title">Panel de Administración de Destinos</h5>
+     <a href="adminDestino.php" class="btn btn-info">INGRESAR</a>
+    </div>
+  </div>
 
-        <div class="list-group">
-            <a href="adminDestino.php" class="list-group-item">
-                Panel de administración de Destinos.
-            </a>
-            <a href="adminCategorias.php" class="list-group-item">
-                Panel de administración de Paquetes.
-            </a>
-            <a href="adminUsuarios.php" class="list-group-item">
-                Panel de administración de Usuarios.
-            </a>
-        </div>
+  <div class="card">
+    <img src="images/img/paquete.jpg" class="card-img-top" alt="...">
+    <div class="card-body mx-auto">
+      <h5 class="card-title">Panel de Administración de Paquetes</h5>
+     <a href="adminPaquete.php" class="btn btn-info">INGRESAR</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/img/usuario.jpg" class="card-img-top" alt="...">
+    <div class="card-body mx-auto">
+      <h5 class="card-title">Panel de Administración de Destinos</h5>
+     <a href="adminUsuarios.php" class="btn btn-info">INGRESAR</a>
+    </div>
+  </div>
+</div>
     </main>
 
 <?php  include 'includes/footer.php';  ?>
