@@ -3,7 +3,7 @@
     function listarPaquetes()
     {
         $link = conectar();
-        $sql = "SELECT idPaquete, packNombre, packPrecio,
+        $sql = "SELECT idPaquete, packNombre,
                         d.idDestino, destNombre, detalle_1,
                         detalle_2, detalle_3, detalle_4, 
                         detalle_5, detalle_6, detalle_7,
@@ -16,40 +16,45 @@
         return $listadoPaquetes;
     }
 
-    function subirArchivo()
-    {
-        $ruta = 'images/productos/';
-        $prdImagen = 'noDisponible.jpg';
-        if ( isset($_POST['imagenOriginal']) ){
-            $prdImagen = $_POST['imagenOriginal'];
-        }
-        if( $_FILES['prdImagen']['error'] == 0 ){
-            $prdImagen = $_FILES['prdImagen']['name'];
-            $prdImagenTMP = $_FILES['prdImagen']['tmp_name'];
-            move_uploaded_file($prdImagenTMP, $ruta.$prdImagen);
-        }
+   
 
-                return $prdImagen;
-    }
-
-    function agregarProducto()
+    function agregarPaquete()
     {
-        $prdNombre = $_POST['prdNombre'];
-        $prdPrecio = $_POST['prdPrecio'];
-        $idMarca = $_POST['idMarca'];
-        $idCategoria = $_POST['idCategoria'];
-        $prdPresentacion = $_POST['prdPresentacion'];
-        $prdStock = $_POST['prdStock'];
-        $prdImagen = subirArchivo();
+        $packNombre = $_POST['packNombre'];
+        $idDestino = $_POST['idDestino'];
+        $detalle_1 = $_POST['detalle_1'];
+        $detalle_2 = $_POST['detalle_2'];
+        $detalle_3 = $_POST['detalle_3'];
+        $detalle_4 = $_POST['detalle_4'];
+        $detalle_5 = $_POST['detalle_5'];
+        $detalle_6 = $_POST['detalle_6'];
+        $detalle_7 = $_POST['detalle_7'];
+        $detalle_8 = $_POST['detalle_8'];
+        $detalle_9 = $_POST['detalle_9'];
+        $hotel_1 = $_POST['hotel_1'];
+        $hotel_2 = $_POST['hotel_2'];
+        $hotel_3 = $_POST['hotel_3'];
+        $hotel_4 = $_POST['hotel_4'];
+        $hotel_5 = $_POST['hotel_5'];
+        $hotel_6 = $_POST['hotel_6'];
+        $hotel_7 = $_POST['hotel_7'];
+        $hotel_8 = $_POST['hotel_8'];
+        $hotel_9 = $_POST['hotel_9'];
 
         $link = conectar();
-        $sql = "INSERT INTO productos
+        $sql = "INSERT INTO paquete
                        VALUE
                        ( 
-                        NULL , '".$prdNombre."', ".$prdPrecio.",
-                                ".$idMarca.", ".$idCategoria.",
-                                '".$prdPresentacion."', ".$prdStock.",
-                                '".$prdImagen."'
+                        NULL , '".$packNombre."', ".$idDestino.",
+                                '".$detalle_1."', '".$detalle_2."',
+                                '".$detalle_3."', '".$detalle_4."',
+                                '".$detalle_5."', '".$detalle_6."',
+                                '".$detalle_7."', '".$detalle_8."',
+                                '".$detalle_9."', '".$hotel_1."',
+                                '".$hotel_2."', '".$hotel_3."',
+                                '".$hotel_4."', '".$hotel_5."',
+                                '".$hotel_6."', '".$hotel_7."',
+                                '".$hotel_8."', '".$hotel_9."'
                         )";
         $resultado = mysqli_query($link, $sql)
                                     or die(mysqli_error($link));

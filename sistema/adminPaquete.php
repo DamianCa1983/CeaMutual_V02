@@ -15,9 +15,8 @@
         <table class="table table-border table stripped table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th>Nombre</th>
+                    <th>Paquete</th>
                     <th>Destino</th>
-                    <th>Precio</th>
                     <th colspan="2">
                         <a href="formAgregarPaquete.php" class="btn btn-secondary">
                             agregar
@@ -30,15 +29,14 @@
             while( $pack = mysqli_fetch_array($paquete) ){
 ?>            
                 <tr>
-                    <td>utf<?php echo $pack['packNombre']; ?></td>
-                    <td><?php echo $pack['destNombre']; ?></td>
-                    <td><?php echo $pack['packPrecio']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $pack['packNombre']; ?></td>
+                    <td class="align-middle"><?php echo $pack['destNombre']; ?></td>
+                    <td class="align-middle">
                         <a href="formModificarPaquete.php?idPaquete=<?=$pack['idPaquete']?>" class="btn btn-outline-secondary">
                             modificar
                         </a>
                     </td>
-                    <td>
+                    <td class="align-middle">
                         <a href="formEliminarProducto.php?idPaquete=<?=$pack['idPaquete']?>" class="btn btn-outline-secondary">
                             eliminar
                         </a>
