@@ -37,7 +37,7 @@
                         </a>
                     </td>
                     <td class="align-middle">
-                        <a href="formEliminarProducto.php?idPaquete=<?=$pack['idPaquete']?>" class="btn btn-outline-secondary">
+                        <a href="formEliminarPaquete.php?idPaquete=<?=$pack['idPaquete']?>" class="btn btn-outline-secondary">
                             eliminar
                         </a>
                     </td>
