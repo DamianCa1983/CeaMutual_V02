@@ -15,6 +15,7 @@
         <table class="table table-border table stripped table-hover">
             <thead class="thead-dark">
                 <tr>
+                    <th>ID</th>
                     <th>Paquete</th>
                     <th>Destino</th>
                     <th colspan="2">
@@ -29,6 +30,7 @@
             while( $pack = mysqli_fetch_array($paquete) ){
 ?>            
                 <tr>
+                    <td class="align-middle"><?php echo $pack['idPaquete']; ?></td>
                     <td class="align-middle"><?php echo $pack['packNombre']; ?></td>
                     <td class="align-middle"><?php echo $pack['destNombre']; ?></td>
                     <td class="align-middle">

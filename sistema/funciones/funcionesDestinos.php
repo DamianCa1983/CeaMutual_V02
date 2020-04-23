@@ -27,7 +27,6 @@
 
                 return $imgDestino;
     }
-
     function agregarDestino()
     {
         $destNombre = $_POST['destNombre'];
@@ -72,15 +71,17 @@
     {
         $idDestino = $_POST['idDestino'];
         $destNombre = $_POST['destNombre'];
+        $imgDestino = subirArchivo();
+
         $link = conectar();
         $sql = "UPDATE destino 
-                SET destNombre = '".$destNombre."',
-                    idDestino = ".$idDestino."
-                WHERE
-                idDestino = ".$idDestino;
-    $resultado = mysqli_query($link, $sql)
-                        or die(mysqli_error($link));
-    return $resultado;
+                    SET destNombre = '".$destNombre."',
+                        imgDestino = '".$imgDestino."'
+                    WHERE
+                        idDestino = ".$idDestino;
+        $resultado = mysqli_query($link, $sql)
+                            or die(mysqli_error($link));
+        return $resultado;
     }
 
     function eliminarDestino()
