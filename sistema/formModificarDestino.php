@@ -18,6 +18,7 @@
             <input type="file" name="imgDestino" class="form-control">
         <br>
             <input type="hidden" name="idDestino"  value="<?= $destino ['idDestino'];?>">
+            <input type="hidden" name="imagenOriginal" value="<?= $destino['imgDestino']; ?>">
         <br>
             <button class="btn btn-secondary">Modificar Destino</button>
             <a href="adminDestino.php" class="btn btn-outline-secondary mx-2">volver a panel de destinos</a>

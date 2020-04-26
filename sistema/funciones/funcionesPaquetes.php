@@ -45,7 +45,7 @@
         $sql = "INSERT INTO paquete
                        VALUE
                        ( 
-                        NULL , '".$packNombre."', ".$idDestino.",
+                        NULL ,  '".$packNombre."', ".$idDestino.",
                                 '".$detalle_1."', '".$detalle_2."',
                                 '".$detalle_3."', '".$detalle_4."',
                                 '".$detalle_5."', '".$detalle_6."',
@@ -65,7 +65,7 @@
     {
         $idPaquete = $_GET['idPaquete'];
         $link = conectar();
-        $sql ="SELECT idPaquete, packNombre,
+        $sql ="SELECT   idPaquete, packNombre,
                         d.idDestino, destNombre, detalle_1,
                         detalle_2, detalle_3, detalle_4, 
                         detalle_5, detalle_6, detalle_7,
@@ -81,6 +81,7 @@
         $detalle = mysqli_fetch_array($resultado);
         return $detalle;        
     }
+
 
     function modificarPaquete()
     {
@@ -148,8 +149,22 @@
         return $resultado;
      }
     
-/**
- * agregarProducto()
- * modificarProducto()
- * eliminarProducto()
- * */
+function mostrarPaqueteWeb()
+     {
+         $idDestino = $_GET['idDestino'];
+         $link = conectar();
+         $sql ="SELECT   idPaquete, packNombre,
+                         idDestino, detalle_1,
+                         detalle_2, detalle_3, detalle_4, 
+                         detalle_5, detalle_6, detalle_7,
+                         detalle_8, detalle_9, hotel_1,
+                         hotel_2, hotel_3, hotel_4, hotel_5,
+                         hotel_6, hotel_7, hotel_8, hotel_9                       
+                FROM paquete
+                WHERE idDestino = ".$idDestino;
+ 
+         $resultado = mysqli_query($link, $sql)
+                                 or die(mysqli_error($link));
+         $detalle = mysqli_fetch_array($resultado);
+         return $detalle;        
+     }

@@ -1,7 +1,7 @@
 <?php
         require 'sistema/funciones/conexion.php';
         require 'sistema/funciones/funcionespaquetes.php';
-        $paquete = verPaquetePorID();
+        $detalle = mostrarPaqueteWeb();
 ?>
 
 <!DOCTYPE html>
@@ -48,36 +48,36 @@
 </div>
 
 <?php 
-    while( $pack = mysqli_fetch_array($paquete) ){
+     while( $pack = mysqli_fetch_array($detalle) ){
 ?> 
 
 <div class="section white">
   <div class="row container" >
     <div class="input-field col s6"  style="background-color: #F8F8F8; border:grey solid, 1px">
-    <h4 class="header">Paquete: <span><?php echo $pack['packNombre']; ?></h4>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_1'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_2'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_3'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_4'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_5'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_6'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_7'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_8'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['detalle_9'];?> </h6>
+    <h4 class="header">Paquete: <span> <?= $pack['packNombre']; ?></h4>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_1'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_2'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_3'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_4'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_5'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_6'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_7'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_8'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_9'];?> </h6>
         <br>
         <a class="waves-effect deep-purple darken-4 btn-large" href="formConsultaTurismo.html"><i class="material-icons right">arrow_forward</i>CONSULTAR</a>
   </div>
   <div class="input-field col s6" style="background-color: #ECECEC">
     <h4 class="header">Hoteles</h4>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_1'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_2'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_3'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_4'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_5'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_6'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_7'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_8'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?php echo $pack['hotel_9'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_1'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_2'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_3'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_4'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_5'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_6'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_7'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_8'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_9'];?> </h6>
   </div>
   </div>
 </div>

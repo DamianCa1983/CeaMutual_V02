@@ -27,6 +27,7 @@
 
                 return $imgDestino;
     }
+    
     function agregarDestino()
     {
         $destNombre = $_POST['destNombre'];
