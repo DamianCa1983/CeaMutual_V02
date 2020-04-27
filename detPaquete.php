@@ -7,9 +7,10 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8″">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Cea Mutual | Turismo</title>
 
@@ -59,29 +60,29 @@
   <div class="row container" >
     <div class="input-field col s6"  style="background-color: #F8F8F8; border:grey solid, 1px">
     <h4 class="header">Paquete: <span> <?= $pack['packNombre']; ?></h4>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_1'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_2'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_3'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_4'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_5'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_6'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_7'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_8'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['detalle_9'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_1'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_2'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_3'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_4'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_5'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_6'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_7'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_8'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['detalle_9'];?> </h6>
         <br>
         <a class="waves-effect deep-purple darken-4 btn-large" href="formConsultaTurismo.html"><i class="material-icons right">arrow_forward</i>CONSULTAR</a>
   </div>
   <div class="input-field col s6" style="background-color: #ECECEC">
     <h4 class="header">Hoteles</h4>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_1'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_2'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_3'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_4'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_5'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_6'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_7'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_8'];?> </h6>
-        <h6  class="black-text"> <span class="card-title activator black-text">• </span> <?= $pack['hotel_9'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_1'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_2'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_3'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_4'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_5'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_6'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_7'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_8'];?> </h6>
+        <h6  class="black-text"> <span class="card-title activator black-text">- </span> <?= $pack['hotel_9'];?> </h6>
   </div>
   </div>
 </div>
