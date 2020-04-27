@@ -1,7 +1,9 @@
 <?php
         require 'sistema/funciones/conexion.php';
         require 'sistema/funciones/funcionespaquetes.php';
-        $detalle = mostrarPaqueteWeb();
+        require 'sistema/funciones/funcionesdestinos.php';
+        $destino = 'verDestinoPorID';
+        $paquetes = mostrarPaqueteWeb();
 ?>
 
 <!DOCTYPE html>
@@ -47,10 +49,12 @@
     <div class="parallax"><img src="images/slider/6.jpg"></div>
 </div>
 
-<?php 
-     while( $pack = mysqli_fetch_array($detalle) ){
-?> 
 
+
+
+<?php 
+  while( $pack = mysqli_fetch_array($paquetes) ){
+?> 
 <div class="section white">
   <div class="row container" >
     <div class="input-field col s6"  style="background-color: #F8F8F8; border:grey solid, 1px">
@@ -84,7 +88,8 @@
 
 <?php
             }
-?> 
+?>
+
 
 
 

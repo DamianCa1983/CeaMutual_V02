@@ -163,8 +163,6 @@ function mostrarPaqueteWeb()
                 FROM paquete
                 WHERE idDestino = ".$idDestino;
  
-         $resultado = mysqli_query($link, $sql)
-                                 or die(mysqli_error($link));
-         $detalle = mysqli_fetch_array($resultado);
-         return $detalle;        
+         $resultado = mysqli_query($link, $sql);
+         return $resultado;        
      }
