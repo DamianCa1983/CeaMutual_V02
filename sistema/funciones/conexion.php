@@ -1,9 +1,9 @@
 <?php
 
     const SERVER    = 'localhost';
-    const USUARIO   = 'root';
-    const CLAVE     = '';
-    const BASE      = 'cea_turismo';
+    const USUARIO   = 'w1421783_cea_tur';
+    const CLAVE     = 'ChLdo1983';
+    const BASE      = 'w1421783_cea_tur';
 
     function conectar()
     {
